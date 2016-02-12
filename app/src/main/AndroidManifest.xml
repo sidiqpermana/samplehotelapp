@@ -22,6 +22,7 @@
     <uses-permission android:name="com.sidiq.myhotelapp.permission.MAPS_RECEIVE" />
 
     <application
+        android:name=".app.HotelioApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -31,13 +32,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -55,7 +50,15 @@
             android:label="@string/title_activity_detail_hotel" />
         <activity android:name=".GalleryActivity" />
         <activity android:name=".SlideshowActivity" />
-        <activity android:name=".ImageDetailActivity"></activity>
+        <activity android:name=".ImageDetailActivity" />
+        <activity android:name=".SplashscreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommentActivity"></activity>
     </application>
 
 </manifest>

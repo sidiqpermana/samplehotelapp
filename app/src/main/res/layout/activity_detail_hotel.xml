@@ -45,6 +45,36 @@
                 android:textSize="20sp"
                 android:textStyle="normal"
                 android:textColor="@color/colorPrimaryDark"
+                android:text="Cuaca Saat Ini"
+                android:layout_marginBottom="13dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                <ImageView
+                    android:id="@+id/img_weather_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_cloud_queue"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_detail_weather"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center_vertical"
+                    android:text="CURRENT WEATHER"
+                    android:lineSpacingMultiplier="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimaryDark"
                 android:text="Harga"
                 android:layout_marginBottom="13dp"/>
             <TextView
@@ -99,6 +129,59 @@
                     android:layout_marginRight="4dp"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/dots"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Review dan Komentar"
+                android:layout_marginBottom="13dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp">
+                <LinearLayout
+                    android:id="@+id/ln_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_comment"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Komentar"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ln_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_forum"
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Review"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"

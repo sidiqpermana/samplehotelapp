@@ -10,12 +10,18 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    dexOptions{
+        incremental true
+        javaMaxHeapSize "4g"
     }
 }
 
@@ -28,4 +34,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.google.code.gson:gson:2.6'
+    compile 'com.android.support:multidex:1.0.1'
 }
